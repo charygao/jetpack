@@ -8,6 +8,7 @@ import { createBlock } from '@wordpress/blocks';
  * Internal dependencies
  */
 import { defaultAttributes } from './attributes';
+import deprecatedV1 from './deprecated/v1';
 import edit from './edit';
 import icon from './icon';
 
@@ -38,13 +39,13 @@ export const settings = {
 	},
 	edit,
 	save: ( { attributes: { rid } } ) => (
-		<>
+		<div>
 			{ rid.map( restaurantId => (
 				<a href={ `https://www.opentable.com/restref/client/?rid=${ restaurantId }` }>
 					{ `https://www.opentable.com/restref/client/?rid=${ restaurantId }` }
 				</a>
 			) ) }
-		</>
+		</div>
 	),
 	attributes: defaultAttributes,
 	example: {
@@ -73,4 +74,5 @@ export const settings = {
 			},
 		],
 	},
+	deprecated: [ deprecatedV1 ],
 };
