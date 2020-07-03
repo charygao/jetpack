@@ -11,7 +11,7 @@ import edit from './edit';
 import save from './save';
 import transforms from './transforms';
 import { supportsCollections } from '../../shared/block-category';
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 /**
  * Example Images

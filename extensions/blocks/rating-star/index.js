@@ -12,7 +12,7 @@ import { StarIcon, StarBlockIcon } from './icon';
 import './editor.scss';
 import './style.scss';
 import { supportsCollections } from '../../shared/block-category';
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 export const name = 'rating-star';
 

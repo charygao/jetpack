@@ -10,7 +10,7 @@ import attributes from './attributes';
 import edit from './edit';
 import icon from './icon';
 import save from './save';
-import { getCategoryWithFallbacks } from '../block-helpers/';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 export const name = 'button';
 

@@ -1,7 +1,7 @@
 /**
  * Internal dependencies
  */
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../helpers';
 
 jest.mock( '@wordpress/blocks', () => ( {
 	getCategories: () => [ { slug: 'foobar' }, { slug: 'barfoo' } ],

@@ -19,7 +19,7 @@ import {
 	LAYOUT_STYLES,
 } from './constants';
 import { isSimpleSite } from '../../shared/site-type-utils';
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 /**
  * Style dependencies

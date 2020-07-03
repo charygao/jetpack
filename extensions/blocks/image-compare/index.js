@@ -12,7 +12,7 @@ import save from './save';
 import imgExampleAfter from './img-example-after.png';
 import imgExampleBefore from './img-example-before.png';
 import { supportsCollections } from '../../shared/block-category';
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 export const name = 'image-compare';
 

@@ -18,11 +18,11 @@ import { getCategories } from '@wordpress/blocks';
  * getCategoryWithFallbacks('new','old', 'older');
  * => 'new'
  *
- * @param requestedCategories an array of categories.
+ * @param {Array<string>} requestedCategories - an array of categories.
  * @returns {string} the first category name found.
  * @throws {Error} if the no categories could be found.
  */
-export function getCategoryWithFallbacks( ...requestedCategories: string[] ): string {
+export function getCategoryWithFallbacks( ...requestedCategories ) {
 	const knownCategories = getCategories();
 	for ( const requestedCategory of requestedCategories ) {
 		if ( knownCategories.some( ( { slug } ) => slug === requestedCategory ) ) {

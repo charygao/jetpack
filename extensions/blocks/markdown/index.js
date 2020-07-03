@@ -13,7 +13,7 @@ import { isAtomicSite, isSimpleSite } from '../../shared/site-type-utils';
 import edit from './edit';
 import save from './save';
 import { supportsCollections } from '../../shared/block-category';
-import { getCategoryWithFallbacks } from '../block-helpers';
+import { getCategoryWithFallbacks } from '../../shared/blocks/helpers';
 
 export const name = 'markdown';
 
