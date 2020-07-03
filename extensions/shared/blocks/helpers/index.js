@@ -1,1 +1,1 @@
-export * from './block-helpers';
+export * from './helpers';

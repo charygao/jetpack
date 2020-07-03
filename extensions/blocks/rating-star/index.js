@@ -28,7 +28,7 @@ export const settings = {
 		_x( 'rating', 'block search term', 'jetpack' ),
 		_x( 'review', 'block search term', 'jetpack' ),
 	],
-	category: supportsCollections() ? getCategoryWithFallbacks( 'text', 'formatting' ) : 'jetpack',
+	category: supportsCollections() ? getCategoryWithFallbacks( 'widgets', 'formatting' ) : 'jetpack',
 	example: {},
 	styles: [
 		{

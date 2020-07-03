@@ -15,10 +15,10 @@ import { getCategories } from '@wordpress/blocks';
  * // Prefer passing the new category first in the array, followed by
  * // older fallback categories. Considering the 'new' category is
  * // registered:
- * getCategoryWithFallbacks('new','old', 'older');
- * => 'new'
+ * getCategoryWithFallbacks( 'new', 'old', 'older' );
+ * // => 'new'
  *
- * @param {Array<string>} requestedCategories - an array of categories.
+ * @param {string[]} requestedCategories - an array of categories.
  * @returns {string} the first category name found.
  * @throws {Error} if the no categories could be found.
  */
